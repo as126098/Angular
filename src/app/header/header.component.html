@@ -1,0 +1,89 @@
+<!-- <div>
+  <mat-toolbar class="head fixed-top ">
+    <span mat-card-avatar id="logo"></span>
+    <span><a routerLink="/">PNC</a></span>
+    <span class="nav-fill-remaining-space"></span>
+    <span class="align-center"></span>
+    <span class="nav-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-sm="true">
+      <span>
+        
+        <button mat-button (click)="login()">Login</button>
+        <button mat-button (click)="register()">Register</button>
+      </span>
+    </div>
+  </mat-toolbar>
+</div>
+ -->
+
+
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">PNC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:4%">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Home
+              <span class="sr-only">(current)</span>
+              </a>
+          </li>
+      
+      <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">
+             <i class="fa fa-home"></i> 
+            About Us
+            <span class="sr-only">(current)</span>
+            </a>
+        </li> -->
+
+      <!-- <li class="nav-item dropdown nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-envelope-o">
+            <span class="badge badge-primary">11</span> 
+          </i>
+          Menues
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+    <ul class="navbar-nav " style="margin-right:2%">
+      <li class="nav-item">
+        <a class="nav-link" >
+         
+          <button class="btn btn-outline-success my-2 my-sm-0" (click)="login()" >Login</button>
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-globe">
+            <span class="badge badge-success">11</span>
+          </i>
+          Test
+        </a>
+      </li> -->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+

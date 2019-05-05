@@ -1,0 +1,36 @@
+
+<section class="login-block">
+<nav class="container">
+
+  
+  <!-- <mat-form-field>
+    <input matInput placeholder="EmailID"  [(ngModel)]="a"    required>
+  </mat-form-field> -->
+  
+
+  <p><strong> Enter One Time Password (OTP) Sent To Your Email-Id </strong></p>
+  <mat-form-field>
+    
+    <input matInput
+     matInput placeholder="Enter OTP"   [(ngModel)]="b"   required>
+  </mat-form-field>
+ 
+
+  
+  <button mat-raised-button color="primary" (click) = "verifyOTP()" > Submit </button>
+  <a class="material-icons" style="margin-left : 58%; margin-top: 2%;" (click) = "resendOTP()" [routerLink]="['/otpGenerate']" preserveQueryParams preserveFragment>
+    Resend OTP
+  </a>
+
+  
+</nav>
+
+<div class = "msg" style="color: red;align-items: center;margin-left:35%;margin-top:10px ">
+
+    <p>
+
+       <strong>{{msg1}}</strong> 
+
+    </p>
+</div>
+</section>

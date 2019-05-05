@@ -1,0 +1,22 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<nav class="container">
+
+  
+  <!-- <mat-form-field>
+    <input matInput placeholder="EmailID"  [(ngModel)]="a"    required>
+  </mat-form-field> -->
+  
+
+  <mat-form-field>
+    <input matInput
+     matInput placeholder="Enter OTP"   [(ngModel)]="b"   required>
+  </mat-form-field>
+ 
+
+  
+  <button mat-raised-button color="primary" (click) = "verifyOTP()" > Submit </button>
+  <a  href="url" style="margin-left : 58%; margin-top: 2%;" (click) = "resendOTP()" >Resend OTP</a>
+  
+</nav>

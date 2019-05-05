@@ -1,0 +1,168 @@
+
+
+<!-- <div *ngIf="user2" [innerHTML]="user2.user_account"></div> -->
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="login-block">
+<div class="container emp-profile" *ngIf="user2" style="background-color:rgb(218, 210, 218)">
+        <h1 style="margin-left:40%; color:rgb(14, 13, 13)"><strong> {{user2.user_name}}</strong> </h1>
+        <hr style="color:black">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img">
+                            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/> -->
+                            
+                            <img src="data:image/png;base64,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" alt=""/>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <!-- <div *ngIf="user2" [innerHTML]="user2.user_account"></div> -->
+                        <div class="profile-head">
+                                    <h5>
+                                        
+                                    </h5>
+                                    <!-- <h6>
+                                        Web Developer and Designer
+                                    </h6>
+                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p> -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-work">
+                            <p></p>
+                            <!-- <a href="">Website Link</a><br/>
+                            <a href="">Bootsnipp Profile</a><br/>
+                            <a href="">Bootply Profile</a>
+                            <p>SKILLS</p>
+                            <a href="">Web Designer</a><br/>
+                            <a href="">Web Developer</a><br/>
+                            <a href="">WordPress</a><br/>
+                            <a href="">WooCommerce</a><br/>
+                            <a href="">PHP, .Net</a><br/> -->
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>User Account</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- <p>{{user2.user_account}}</p> -->
+                                                <p [innerHTML]="user2.user_account"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Name</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{user2.user_name}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{user2.email_id}}</p>
+                                                <!-- <input type="submit" class="profile-edit-btn" name="btnAddMore" (click)="updateEmail()" value="Update Email"/> -->
+                                                <button mat-raised-button color="primary" (click)="updateEmail()" style="margin-bottom:3%" > Update Email </button>
+                                            </div>
+                                            
+                                                   
+                                               
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Phone</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{user2.mobile_no}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Age</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{user2.age}}</p>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Experience</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Expert</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Hourly Rate</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>10$/hr</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Total Projects</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>230</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>English Level</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Expert</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Availability</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>6 months</p>
+                                            </div>
+                                        </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>Your Bio</label><br/>
+                                        <p>Your detail description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>           
+        </div>
+    </section>
